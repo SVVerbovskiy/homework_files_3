@@ -1,7 +1,7 @@
 import glob
 import os
 
-dir_name = 'D:\\Netology\Homeworks Files_3'
+dir_name = os.getcwd()
 pattern = '*.txt'
 new_file = 'new_file.all'
 glob_path = os.path.join(dir_name, pattern)
@@ -15,4 +15,3 @@ for file_name in list_files:
         fw.write(f'\n{os.path.basename(file_name)}\n{lines}\n')
         for line in text:
             fw.write(line)
-
